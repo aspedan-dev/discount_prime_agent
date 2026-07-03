@@ -17,7 +17,16 @@
       "PowerShell(python --version)",
       "Bash(cat pytest.ini)",
       "Bash(cat setup.cfg)",
-      "Bash(cat pyproject.toml)"
+      "Bash(cat pyproject.toml)",
+      "PowerShell(winget --version 2>$null)",
+      "PowerShell(choco --version 2>$null)",
+      "PowerShell(choco install python -y)",
+      "PowerShell(python -m pip --version)",
+      "PowerShell(python -m ensurepip --upgrade 2>&1)",
+      "PowerShell(& \"C:\\\\Python314\\\\python.exe\" -m pip --version)",
+      "PowerShell(& \"C:\\\\Python314\\\\python.exe\" -m ensurepip --upgrade)",
+      "PowerShell(& \"C:\\\\Python314\\\\python.exe\" -m pip install --upgrade pip)",
+      "PowerShell(& \"C:\\\\Python314\\\\python.exe\" -m pip install -r requirements.txt)"
     ]
   }
 }

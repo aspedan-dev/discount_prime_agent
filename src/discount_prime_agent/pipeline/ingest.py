@@ -411,9 +411,10 @@ def assert_no_pii(*dfs: pd.DataFrame) -> None:
         # ── value check (sampled) ────────────────────────────────────────────
         str_cols = [c for c in df.columns if df[c].dtype == object]
         for col in str_cols:
-            sample = df[col].dropna().astype(str).sample(
-                n=min(500, len(df)), random_state=42
-            )
+            non_null = df[col].dropna().astype(str)
+            if non_null.empty:
+                continue
+            sample = non_null.sample(n=min(500, len(non_null)), random_state=42)
             for val in sample:
                 # Skip JSON-serialised list/dict strings — they may contain
                 # campaign names that include "@" in theory, but email regex
