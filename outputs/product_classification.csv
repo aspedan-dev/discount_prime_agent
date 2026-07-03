@@ -1,0 +1,19 @@
+product_id,title,units_sold,revenue,gross_margin_alloc,margin_pct,velocity_per_day,movement_class,data_sufficient
+7000828197913,Reed Diffuser Luxury Set,1241,76603.39,35318.3319,0.4611,3.345013,fast,True
+7000752187875,Home Fragrance Gift Box,1052,79318.53,28844.8849,0.3637,2.83558,fast,True
+7000019539811,Travel Candle Tin (free gift),654,0.0,0.0,0.0,1.762803,fast,True
+7000357423367,Linen Throw Blanket,593,44909.99,22434.352,0.4995,1.598383,fast,True
+7000103320804,Decorative Throw Pillow Cover,590,33970.14,17706.7976,0.5212,1.590296,fast,True
+7000614995948,Soy Wax Pillar Candle,580,33989.61,19755.0685,0.5812,1.563342,fast,True
+7000172442836,Festive Eucalyptus Wreath,556,33992.77,15662.606,0.4608,1.498652,medium,True
+7000291813017,Aroma Candle Collection (Set of 2),501,33959.86,16673.0835,0.491,1.350404,medium,True
+7000791320830,Holiday Spice Candle (6-pack),470,35802.38,13204.1819,0.3688,1.266846,medium,True
+7000655717060,Scented Room Spray,435,30999.79,654.3269,0.0211,1.172507,medium,True
+7000700036984,Luxury Scented Candle Duo,380,15216.91,9608.4299,0.6314,1.024259,medium,True
+7000314237319,Seasonal Décor Bundle,378,12662.76,6014.0855,0.4749,1.018868,slow,True
+7000090128723,Ceramic Vase & Bowl Set,305,10206.5,4852.6335,0.4754,0.822102,slow,True
+7000446947906,Seasonal Table Runner,302,10108.62,4802.9401,0.4751,0.814016,slow,True
+7000113321342,Summer Citrus Candle Set,132,7686.54,3521.7521,0.4582,0.355795,slow,True
+7000117903643,Natural Beeswax Pillar Candle (3-pack),112,8533.77,3029.4945,0.355,0.301887,slow,True
+7000165029121,Clearance Aromatherapy Set,71,2375.56,1130.679,0.476,0.191375,slow,True
+7000147758218,Essential Oil Ultrasonic Diffuser,5,134.14,59.0223,0.44,0.013477,slow,False

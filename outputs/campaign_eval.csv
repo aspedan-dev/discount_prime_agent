@@ -1,0 +1,11 @@
+campaign_id,campaign_name,type,status,window_days,attributed_orders,campaign_units,baseline_units,campaign_margin_total,baseline_margin_total,margin_per_day_campaign,margin_per_day_baseline,units_lift_ratio,shipping_cost_impact,verdict,confidence,reason_code,reported_totalRevenue,reported_marginPct
+sc1,"Buy 2 Candles, Get 1 Free",buy_one_get_one,active,273,507,1461,0,46036.58,0.0,168.6322,0.0,0.0,,inconclusive,0.2,low_n:baseline_days=0<3|baseline_units=0<20|baseline_margin_per_day_invalid,88200.0,28.0
+sc2,Free Shipping over $50,shipping,active,371,1223,3790,76,86766.97,2949.63,233.8732,8.2163,48.2554,7042.77,success,0.7,margin_lift|volume_lift|shipping_order_level_attribution_coarse,58400.0,34.0
+sc3,BFCM Tiered Quantity,volume,expired,30,878,1658,0,41797.31,0.0,1393.2438,0.0,0.0,,inconclusive,0.2,low_n:baseline_days=0<3|baseline_units=0<20|baseline_margin_per_day_invalid,52100.0,22.0
+sc4,Holiday Discount 15%,general,expired,122,701,1328,0,33669.73,0.0,275.9814,0.0,0.0,,inconclusive,0.2,low_n:baseline_days=0<3|baseline_units=0<20|baseline_margin_per_day_invalid,42300.0,18.0
+sc5,"Spring Decor: Buy 3+, Save 12%",volume,active,371,699,1318,0,33232.62,0.0,89.5758,0.0,0.0,,inconclusive,0.2,low_n:baseline_days=0<3|baseline_units=0<20|baseline_margin_per_day_invalid,34000.0,14.0
+sc6,"Spend $100, Save $15",order,active,365,49,204,541,2528.57,16931.59,6.9276,45.8851,0.3812,,flop,0.8,margin_erosion,28100.0,24.0
+sc7,Free Gift with $75 Purchase,buy_one_get_one,expired,371,654,654,0,0.0,0.0,0.0,0.0,0.0,,inconclusive,0.2,low_n:baseline_days=0<3|baseline_units=0<20|baseline_margin_per_day_invalid,24200.0,20.0
+sc8,VIP Members Free Shipping,shipping,active,240,99,307,0,10730.38,0.0,44.7099,0.0,0.0,989.01,inconclusive,0.2,low_n:baseline_days=0<3|baseline_units=0<20|baseline_margin_per_day_invalid,20100.0,33.0
+sc9,Free Shipping – First Order,shipping,active,27,7,28,0,1108.02,0.0,41.0378,0.0,0.0,69.93,inconclusive,0.2,low_n:baseline_days=0<3|baseline_units=0<20|baseline_margin_per_day_invalid,16200.0,31.0
+sc10,Flash Sale: Summer Clearance,general,expired,31,165,315,0,7681.93,0.0,247.8041,0.0,0.0,,inconclusive,0.2,low_n:baseline_days=0<3|baseline_units=0<20|baseline_margin_per_day_invalid,12100.0,8.0

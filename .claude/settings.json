@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"c:/ShahramAgent/discount_prime_agent/src/discount_prime_agent/pipeline\")",
+      "Bash(mkdir -p \"c:/ShahramAgent/discount_prime_agent/src/discount_prime_agent/agents/analytics_agent\")",
+      "Bash(mkdir -p \"c:/ShahramAgent/discount_prime_agent/src/discount_prime_agent/agents/strategy_agent\")",
+      "Bash(mkdir -p \"c:/ShahramAgent/discount_prime_agent/src/discount_prime_agent/mcp\")",
+      "Bash(mv ingest.py pipeline/ingest.py)",
+      "Bash(mv metrics.py pipeline/metrics.py)",
+      "Bash(mv classify.py pipeline/classify.py)",
+      "Bash(mv campaign_eval.py pipeline/campaign_eval.py)",
+      "Bash(mv rules.py pipeline/rules.py)",
+      "Bash(python -c \"import sys; print\\(sys.version\\)\")",
+      "Bash(pip show *)",
+      "Bash(py --version)",
+      "PowerShell(py --version)",
+      "PowerShell(python --version)",
+      "Bash(cat pytest.ini)",
+      "Bash(cat setup.cfg)",
+      "Bash(cat pyproject.toml)"
+    ]
+  }
+}

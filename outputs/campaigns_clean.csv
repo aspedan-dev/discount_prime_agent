@@ -1,0 +1,11 @@
+id,shopId,name,type,status,startAt,endAt,ranAt,totalRevenue,orderCount,marginPct,isDeleted
+sc1,sd-shop-0001,"Buy 2 Candles, Get 1 Free",buy_one_get_one,active,2025-05-10 00:00:00+00:00,,2025-05-10 00:05:00+00:00,88200.0,680,28.0,False
+sc2,sd-shop-0001,Free Shipping over $50,shipping,active,2025-05-10 00:00:00+00:00,,2025-05-10 00:05:00+00:00,58400.0,450,34.0,False
+sc3,sd-shop-0001,BFCM Tiered Quantity,volume,expired,2025-11-01 00:00:00+00:00,2025-12-02 23:59:59+00:00,2025-11-01 00:05:00+00:00,52100.0,330,22.0,False
+sc4,sd-shop-0001,Holiday Discount 15%,general,expired,2025-09-01 00:00:00+00:00,2025-12-31 23:59:59+00:00,2025-09-01 00:05:00+00:00,42300.0,340,18.0,False
+sc5,sd-shop-0001,"Spring Decor: Buy 3+, Save 12%",volume,active,2026-03-15 00:00:00+00:00,2026-05-31 23:59:59+00:00,2026-03-15 00:05:00+00:00,34000.0,240,14.0,False
+sc6,sd-shop-0001,"Spend $100, Save $15",order,active,2025-10-01 00:00:00+00:00,,2025-10-01 00:05:00+00:00,28100.0,200,24.0,False
+sc7,sd-shop-0001,Free Gift with $75 Purchase,buy_one_get_one,expired,2025-10-01 00:00:00+00:00,2025-12-31 23:59:59+00:00,2025-10-01 00:05:00+00:00,24200.0,170,20.0,False
+sc8,sd-shop-0001,VIP Members Free Shipping,shipping,active,2025-08-01 00:00:00+00:00,,2025-08-01 00:05:00+00:00,20100.0,160,33.0,False
+sc9,sd-shop-0001,Free Shipping – First Order,shipping,active,2025-05-10 00:00:00+00:00,,2025-05-10 00:05:00+00:00,16200.0,130,31.0,False
+sc10,sd-shop-0001,Flash Sale: Summer Clearance,general,expired,2025-07-08 00:00:00+00:00,2025-07-22 23:59:59+00:00,2025-07-08 00:05:00+00:00,12100.0,105,8.0,False
