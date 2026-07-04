@@ -161,6 +161,53 @@ is currently no existing MCP code in Prime-Backend — this would be the first.
 
 ---
 
+## Docker
+
+The image runs `python -m discount_prime_agent.main --mode pipeline` by
+default, but the entrypoint is just `python` — override the command to run
+any of the three modes:
+
+```bash
+# Build
+docker build -t discount-prime-agent .
+
+# Deterministic pipeline (no API key needed)
+docker run --rm -v "$(pwd)/outputs:/app/outputs" discount-prime-agent
+
+# Agent Orchestration (needs GOOGLE_API_KEY)
+docker run --rm --env-file .env -v "$(pwd)/outputs:/app/outputs" \
+  discount-prime-agent -m discount_prime_agent.main --mode agents
+
+# MCP server (stdio -- needs -i to keep stdin open)
+docker run --rm -i --env-file .env \
+  discount-prime-agent -m discount_prime_agent.mcp.server
+```
+
+Or with Compose (defaults to pipeline mode, edit `command:` in
+`docker-compose.yml` to switch modes):
+
+```bash
+docker compose up --build
+```
+
+---
+
+## CI/CD (GitHub Actions)
+
+[`.github/workflows/ci-cd.yml`](.github/workflows/ci-cd.yml):
+
+- **`test`** — runs on every push/PR to `main`: installs dependencies,
+  editable-installs the package, runs `pytest tests/ -v`. No API key needed
+  (all tests call pipeline/tool functions directly or validate schemas).
+- **`build-and-push`** — runs only on a push to `main` (after `test` passes):
+  builds the Docker image and pushes it to GitHub Container Registry as
+  `ghcr.io/<owner>/<repo>:latest` and `ghcr.io/<owner>/<repo>:<git-sha>`.
+  Uses the built-in `GITHUB_TOKEN`, no extra secrets to configure. The
+  package may need to be set to public in the repo's Packages settings the
+  first time it's pushed if you want it pullable without authentication.
+
+---
+
 ## Environment variables (`.env`)
 
 See [`.env.example`](.env.example):

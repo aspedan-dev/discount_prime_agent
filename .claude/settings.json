@@ -28,7 +28,9 @@
       "PowerShell(& \"C:\\\\Python314\\\\python.exe\" -m pip install --upgrade pip)",
       "PowerShell(& \"C:\\\\Python314\\\\python.exe\" -m pip install -r requirements.txt)",
       "PowerShell(Stop-Process -Name explorer -Force)",
-      "PowerShell(Start-Process explorer.exe)"
+      "PowerShell(Start-Process explorer.exe)",
+      "PowerShell(docker --version 2>&1)",
+      "PowerShell(docker info 2>&1)"
     ]
   }
 }

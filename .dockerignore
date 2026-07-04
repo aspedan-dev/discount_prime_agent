@@ -1,0 +1,16 @@
+.git
+.github
+.claude
+.env
+.pytest_cache
+**/__pycache__
+**/*.py[cod]
+*.egg-info
+**/.adk
+outputs
+tests
+README.md
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml

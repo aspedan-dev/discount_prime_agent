@@ -1,0 +1,9 @@
+services:
+  prime-agent:
+    build: .
+    image: discount-prime-agent:local
+    env_file:
+      - .env
+    volumes:
+      - ./outputs:/app/outputs
+    command: ["-m", "discount_prime_agent.main", "--mode", "pipeline"]
