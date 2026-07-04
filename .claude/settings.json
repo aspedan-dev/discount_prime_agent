@@ -26,7 +26,9 @@
       "PowerShell(& \"C:\\\\Python314\\\\python.exe\" -m pip --version)",
       "PowerShell(& \"C:\\\\Python314\\\\python.exe\" -m ensurepip --upgrade)",
       "PowerShell(& \"C:\\\\Python314\\\\python.exe\" -m pip install --upgrade pip)",
-      "PowerShell(& \"C:\\\\Python314\\\\python.exe\" -m pip install -r requirements.txt)"
+      "PowerShell(& \"C:\\\\Python314\\\\python.exe\" -m pip install -r requirements.txt)",
+      "PowerShell(Stop-Process -Name explorer -Force)",
+      "PowerShell(Start-Process explorer.exe)"
     ]
   }
 }
